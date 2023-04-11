@@ -1,0 +1,53 @@
+# Reporte Issues encontrados
+Este informe tiene una lista de errores que encontramos al testear la aplicación. Los mismos van a ser clasificados según su severidad y prioridad.
+
+- Botón de Registrarse no hace nada:
+    - Descripción: No está implementado, pero se muestra en la app.
+    - Clasificación según severidad: Critico
+    - Clasificación según prioridad: Inmediata
+- Mensaje de error modificación o alta de banda:
+    - Descripción: Al modificar o dar de alta, si se agrega un artista sin rol el error dice “The band must have a role” en vez de “artist”.
+    - Clasificación según severidad: Leve
+    - Clasificación según prioridad: Baja
+- Mensaje de error modificación o alta de banda:
+    - Descripción: Al modificar o dar de alta, si se agrega un artista sin nombre ni roles, muestra el error de roles.
+    - Clasificación según severidad: Leve
+    - Clasificación según prioridad: Baja
+- Mensaje de error modificación o alta de banda:
+    - Descripción: Al modificar o dar de alta, si se agrega un artista sin nombre pero con roles, muestra un error no amigable. 
+    - Clasificación según severidad: Leve
+    - Clasificación según prioridad: Baja
+- Artista solista alta:
+    - Descripción: Alta no cumple con los requerimientos. Pide un usuario asociado en lugar de nombre, fecha de inicio de carrera y género.
+    - Clasificación según severidad: Mayor
+    - Clasificación según prioridad: Alta
+- Artista solista modifificación:
+    - Descripción: Modifificación no cumple con los requerimientos. Pide un usuario asociado en lugar de nombre, fecha de inicio de carrera y género.
+    - Clasificación según severidad: Mayor
+    - Clasificación según prioridad: Alta
+- Modificar datos de su cuenta:
+    - Descripción: Los datos no se ve actualizado en el menú hasta cerrar sesión e iniciar nuevamente.
+    - Clasificación según severidad: Menor
+    - Clasificación según prioridad: Media
+- Verificar tickets:
+    - Descripción: Falta la funcionalidad para la verificación de tickets.
+    - Clasificación según severidad: Critico
+    - Clasificación según prioridad: Inmediata
+- Baja generos admin:
+    - Descripción: No tiene baja para los generos.
+    - Clasificación según severidad: Menor
+    - Clasificación según prioridad: Media
+- Venta de tickets:
+    - Descripción: Si se intenta vender más de la cantidad de tickets disponibles, el error siempre dice que quedan 5 tickets disponibles.
+    - Clasificación según severidad: Menor
+    - Clasificación según prioridad: Media
+- Usuarios mensaje de error:
+    - Descripción: Cuando el email está vacío el error no es amigable. Dice Object object.
+    - Clasificación según severidad: Leve
+    - Clasificación según prioridad: Baja
+- Concierto mensaje de error: 
+    - Descripción: Cuando no se completan los datos correctamente el error no es amigable.
+    - Clasificación según severidad: Leve
+    - Clasificación según prioridad: Baja
+ 
+
