@@ -22,7 +22,7 @@ https://metroretro.io/BO5ZV88KJY3Z
 ## Informe de avance
 A pesar de los contratiempos detectados, en esta etapa se completó el primer análisis del código y aplicación, detectando los bugs críticos a solucionar para el correcto funcionamiento de la aplicación y también las posibles mejoras a aplicar en el código para mejorar el rendimiento del equipo al trabajar en el mismo. Se utilizó un tablero Kanban tradicional para llevar el control de las tareas en el pipeline y consideramos que cumplimos con un proceso de ingeniería adecuado para las tareas de la etapa.
 
-A continuación dejamos un informe de las horas invertidas en cada tarea:
+## Informe de horas
 
 Guía de definición y uso de Kanban: 1h
 Análisis de deuda técnica: 4h 30m
