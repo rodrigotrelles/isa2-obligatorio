@@ -5,15 +5,15 @@ Este informe tiene una lista de errores que encontramos al testear la aplicació
     - Descripción: No está implementado, pero se muestra en la app.
     - Clasificación según severidad: Critico
     - Clasificación según prioridad: Inmediata
-- Mensaje de error modificación o alta de banda:
+- Mensaje de error en modificación o alta de banda:
     - Descripción: Al modificar o dar de alta, si se agrega un artista sin rol el error dice “The band must have a role” en vez de “artist”.
     - Clasificación según severidad: Leve
     - Clasificación según prioridad: Baja
-- Mensaje de error modificación o alta de banda:
+- Mensaje de error en modificación o alta de banda:
     - Descripción: Al modificar o dar de alta, si se agrega un artista sin nombre ni roles, muestra el error de roles.
     - Clasificación según severidad: Leve
     - Clasificación según prioridad: Baja
-- Mensaje de error modificación o alta de banda:
+- Mensaje de error en modificación o alta de banda:
     - Descripción: Al modificar o dar de alta, si se agrega un artista sin nombre pero con roles, muestra un error no amigable. 
     - Clasificación según severidad: Leve
     - Clasificación según prioridad: Baja
