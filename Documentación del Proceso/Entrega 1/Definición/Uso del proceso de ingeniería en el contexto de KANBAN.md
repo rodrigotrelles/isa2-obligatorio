@@ -2,8 +2,8 @@
 
 Para este proceso de ingeniería se definieron los siguientes roles:
 
-PO: Franco - Encargado de la priorización y clasificación de issues
-SM: Rodrigo - Encargado del acompañamiento del proceso y supervisión de ceremonias
+"PO": Franco - Encargado de la priorización y clasificación de issues
+"SM"/Facilitador: Rodrigo - Encargado del acompañamiento del proceso y supervisión de ceremonias
 
 Todos los miembros del equipo trabajan como desarrolladores, testers y documentadores.
 
