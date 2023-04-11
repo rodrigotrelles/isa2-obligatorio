@@ -24,18 +24,18 @@ A pesar de los contratiempos detectados, en esta etapa se completó el primer an
 
 ## Informe de horas
 
-Guía de definición y uso de Kanban: 1h
-Análisis de deuda técnica: 4h 30m
-Documentación de issues: 2h 45m
-Documentación del repositorio: 1h 15m
-Documentación de registro de horas: 30m
+- Guía de definición y uso de Kanban: 1h
+- Análisis de deuda técnica: 4h 30m
+- Documentación de issues: 2h 45m
+- Documentación del repositorio: 1h 15m
+- Documentación de registro de horas: 30m
 
 Total: 9h 30m
 
-A todo esto, sumamos 15h 20m bajo el concepto de gestión general del proyecto con el siguiente reparto:
-Reuniones: 3h
-Retrospectiva: 2h
-Tareas de entendimiento y gestión: 5h 20m
-Instalación del proyecto y solución de problemas bloqueantes: 5h
+A todo lo anterior, sumamos 15h 20m bajo el concepto de gestión general del proyecto con el siguiente reparto:
+- Reuniones: 3h
+- Retrospectiva: 2h
+- Tareas de entendimiento y gestión: 5h 20m
+- Instalación del proyecto y solución de problemas bloqueantes: 5h
 
 Total incluyendo gestión: 24h 50m
