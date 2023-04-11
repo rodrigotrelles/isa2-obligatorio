@@ -3,11 +3,15 @@
 ## Estructura de carpetas
 El repositorio va a estar organizado en 3 carpetas principales
 
+1. Obligatorio
+1. Documentación del proceso
+2. Informes de avance y métricas 
+
 ### Obligatorio 
 Esta carpeta contiene todo el código fuente del proyecto en el que estamos trabajando, incluyendo backups de base de datos.
 
 
-### Documentación general
+### Documentación del proceso
 Esta carpeta va a contener toda la documentación vinculada a las respectivas entregas que vamos a estar realizando.
 
 
