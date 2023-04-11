@@ -18,3 +18,24 @@ La grabación de la retrospectiva la podemos ver dentro de esta misma carpeta
 ## Tablero de la Retro
 
 https://metroretro.io/BO5ZV88KJY3Z
+
+## Informe de avance
+A pesar de los contratiempos detectados, en esta etapa se completó el primer análisis del código y aplicación, detectando los bugs críticos a solucionar para el correcto funcionamiento de la aplicación y también las posibles mejoras a aplicar en el código para mejorar el rendimiento del equipo al trabajar en el mismo. Se utilizó un tablero Kanban tradicional para llevar el control de las tareas en el pipeline y consideramos que cumplimos con un proceso de ingeniería adecuado para las tareas de la etapa.
+
+A continuación dejamos un informe de las horas invertidas en cada tarea:
+
+Guía de definición y uso de Kanban: 1h
+Análisis de deuda técnica: 4h 30m
+Documentación de issues: 2h 45m
+Documentación del repositorio: 1h 15m
+Documentación de registro de horas: 30m
+
+Total: 9h 30m
+
+A todo esto, sumamos 15h 20m bajo el concepto de gestión general del proyecto con el siguiente reparto:
+Reuniones: 3h
+Retrospectiva: 2h
+Tareas de entendimiento y gestión: 5h 20m
+Instalación del proyecto y solución de problemas bloqueantes: 5h
+
+Total incluyendo gestión: 24h 50m
