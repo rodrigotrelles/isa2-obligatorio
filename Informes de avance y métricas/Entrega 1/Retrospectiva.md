@@ -11,9 +11,9 @@ Obtuvimos como resultado cuatro puntos de acción listados a continuación:
 
 Como conclusión, entendemos que existen varios puntos de mejora para tener en cuenta en la próxima entrega y haremos lo posible por mejorar en lo que detectamos.
 
-## Enlace para ver la Retrospectiva de la entrega
+## Grabacion
 
-https://fi365-my.sharepoint.com/✌️/g/personal/rt165832_fi365_ort_edu_uy/EZY1IgVD3E1KtCUkTaFLY7MBCYN3_LH91pClGf6IPLBn6w?e=1fkKKk
+La grabación de la retrospectiva la podemos ver dentro de esta misma carpeta
 
 ## Tablero de la Retro
 
