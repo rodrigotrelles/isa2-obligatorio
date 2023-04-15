@@ -8,6 +8,7 @@ import { GenderUpdateComponent } from './routes/genders/gender-update.component'
 import { GendersComponent } from './routes/genders/genders.component';
 import { HomeComponent } from './routes/home/home.component';
 import { LoginComponent } from './routes/login/login.component';
+import { RegisterComponent } from './routes/register/register.component';
 import { AuthGuard } from './auth.guard'
 import { SoloistComponent } from './routes/soloist/soloist.component';
 import { SoloistInsertComponent } from './routes/soloist/soloist-insert.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'cambiarcontrasena', component: ChangePasswordComponent, canActivate: [AuthGuard], data: { roles: ['Administrador', 'Espectador', 'Vendedor', 'Acomodador', 'Artista'] } },
   { path: 'misdatos', component: ChangeDataComponent, canActivate: [AuthGuard], data: { roles: ['Administrador', 'Espectador', 'Vendedor', 'Acomodador', 'Artista'] } },
   { path: 'mistickets', component: MyTicketsComponent, canActivate: [AuthGuard], data: { roles: ['Espectador'] } },

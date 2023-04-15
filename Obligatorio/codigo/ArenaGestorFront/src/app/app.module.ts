@@ -8,6 +8,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { HomeComponent } from './routes/home/home.component';
 import { SecurityService } from './services/security.service';
 import { LoginComponent } from './routes/login/login.component';
+import { RegisterComponent } from './routes/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Events } from './app.events';
 import { CookieService } from 'ngx-cookie-service';
@@ -57,6 +58,7 @@ import { ProtagonistSoloistComponent } from './routes/protagonist/protagonist.so
     HeaderComponent,
     HomeComponent,
     LoginComponent,
+    RegisterComponent,
     UserInfoComponent,
     GendersComponent,
     GenderInsertComponent,
