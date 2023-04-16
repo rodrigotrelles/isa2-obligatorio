@@ -5,6 +5,7 @@ using ArenaGestor.BusinessInterface;
 using ArenaGestor.Domain;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ArenaGestor.API.Controllers
 {
@@ -39,6 +40,28 @@ namespace ArenaGestor.API.Controllers
             return Ok(true);
         }
 
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] SecurityRegisterUserDto insertUser)
+        {
+            var user = new User()
+            {
+                Name = insertUser.Name,
+                Surname = insertUser.Surname,
+                Email = insertUser.Email,
+                Password = insertUser.Password,
+                Roles = new List<UserRole>() {
+                    new UserRole()
+                    {
+                        RoleId = RoleCode.Espectador
+                    }
+                }
+            };
+            var result = usersService.InsertUser(user);
+            var resultDto = mapper.Map<SecurityRegisterUserDto>(result);
+            return Ok(resultDto);
+        }
+
+
         [HttpGet("user")]
         [AuthorizationFilter(RoleCode.Administrador, RoleCode.Vendedor, RoleCode.Acomodador, RoleCode.Espectador, RoleCode.Artista)]
         public IActionResult LoggedUser([FromHeader] string token)
@@ -48,4 +71,5 @@ namespace ArenaGestor.API.Controllers
             return Ok(resultDto);
         }
     }
+
 }
