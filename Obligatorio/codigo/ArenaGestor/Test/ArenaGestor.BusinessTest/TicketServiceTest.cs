@@ -24,15 +24,12 @@ namespace ArenaGestor.BusinessTest
         private Concert nullConcert;
         private Concert concertOk;
         private Concert concertFullTickets;
-        private Ticket nullTicket;
         private Ticket ticketScannedOk;
         private Ticket ticketBuyedOk;
         private List<Ticket> ticketsOK;
         private User userOk;
-        private User userNull;
 
         private TicketSell ticketSellInvalidEmail;
-        private TicketSell ticketSellInvalidConcert;
         private TicketSell ticketSellNoMoreTickets;
         private TicketSell ticketSellOK;
         private TicketSell ticketSellNull;
@@ -303,7 +300,7 @@ namespace ArenaGestor.BusinessTest
         [TestMethod]
         public void ScanTicketNotExistsTest()
         {
-            managementMock.Setup(x => x.GetTicketById(It.IsAny<Guid>())).Returns(nullTicket);
+            managementMock.Setup(x => x.GetTicketById(It.IsAny<Guid>())).Returns<Ticket, Ticket>(null);
             ticketService.ScanTicket(Guid.NewGuid());
         }
 
@@ -354,7 +351,7 @@ namespace ArenaGestor.BusinessTest
                 ConcertId = concertOk.ConcertId
             };
 
-            securityServiceMock.Setup(x => x.GetUserOfToken(It.IsAny<string>())).Returns(userNull);
+            securityServiceMock.Setup(x => x.GetUserOfToken(It.IsAny<string>())).Returns<User, User>(null);
             concertServiceMock.Setup(x => x.GetConcertById(It.IsAny<int>())).Returns(concertOk);
 
             Ticket ticket = ticketService.BuyTicket(It.IsAny<string>(), ticketBuyInvalidUser);

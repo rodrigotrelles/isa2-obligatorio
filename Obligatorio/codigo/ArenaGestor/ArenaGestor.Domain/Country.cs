@@ -18,5 +18,9 @@ namespace ArenaGestor.Domain
                 (!string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(other.Name) && Name.Trim().ToUpper() == other.Name.Trim().ToUpper()));
         }
 
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(CountryId, Name);
+        }
     }
 }

@@ -28,6 +28,21 @@ namespace ArenaGestor.Domain
                 (!string.IsNullOrEmpty(TourName) && !string.IsNullOrEmpty(other.TourName) && TourName.Trim().ToUpper() == other.TourName.Trim().ToUpper()));
         }
 
+        public override int GetHashCode()
+        {
+            HashCode hash = new HashCode();
+            hash.Add(ConcertId);
+            hash.Add(TourName);
+            hash.Add(Date);
+            hash.Add(TicketCount);
+            hash.Add(Price);
+            hash.Add(Tickets);
+            hash.Add(Protagonists);
+            hash.Add(Location);
+            hash.Add(LocationId);
+            return hash.ToHashCode();
+        }
+
         public void ValidConcert()
         {
             if (!CommonValidations.ValidRequiredString(this.TourName))

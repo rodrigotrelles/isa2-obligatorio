@@ -1,4 +1,6 @@
-﻿namespace ArenaGestor.Domain
+﻿using System;
+
+namespace ArenaGestor.Domain
 {
     public class UserRole
     {
@@ -10,6 +12,11 @@
         public override bool Equals(object obj)
         {
             return obj is UserRole other && UserId == other.UserId && RoleId == other.RoleId;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(UserId, RoleId, User, Role);
         }
     }
 }

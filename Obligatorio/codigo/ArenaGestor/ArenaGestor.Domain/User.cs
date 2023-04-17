@@ -35,6 +35,11 @@ namespace ArenaGestor.Domain
                 (!string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(other.Email) && Email.Trim().ToUpper() == other.Email.Trim().ToUpper()));
         }
 
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(UserId, Name, Surname, Email, Password, Roles);
+        }
+
         public void ValidUser()
         {
             if (!CommonValidations.ValidRequiredString(this.Name))

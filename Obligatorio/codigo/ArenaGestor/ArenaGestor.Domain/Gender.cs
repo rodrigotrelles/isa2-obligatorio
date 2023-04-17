@@ -39,5 +39,9 @@ namespace ArenaGestor.Domain
             }
         }
 
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(GenderId, Name, MusicalProtagonists);
+        }
     }
 }
