@@ -33,3 +33,4 @@ jobs:
         dotnet_format: true
         dotnet_format_dir: ./Obligatorio/codigo/ArenaGestor
         dotnet_format_args: "--verify-no-changes"
+        continue_on_error: false
