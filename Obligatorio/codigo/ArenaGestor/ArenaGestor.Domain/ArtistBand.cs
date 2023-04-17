@@ -16,7 +16,7 @@ namespace ArenaGestor.Domain
 
         public void ValidArtistBand()
         {
-            if (this.RoleArtistId <= 0 )
+            if (this.RoleArtistId <= 0)
             {
                 throw new ArgumentException("The band must have a role");
             }

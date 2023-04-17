@@ -17,7 +17,7 @@ namespace ArenaGestor.DataAccess.Managements
             this.musicalProtagonist = context.Set<MusicalProtagonist>();
             this.context = context;
         }
-        
+
         public MusicalProtagonist GetMusicalProtagonistById(int musicalProtagonistId)
         {
             return musicalProtagonist.Include(x => x.Concerts).AsNoTracking().FirstOrDefault(mp => mp.MusicalProtagonistId == musicalProtagonistId);
