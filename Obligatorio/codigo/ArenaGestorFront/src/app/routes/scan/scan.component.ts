@@ -7,14 +7,11 @@ import { TicketsService } from 'src/app/services/tickets.service';
   selector: 'app-scan',
   templateUrl: './scan.component.html'
 })
-export class ScanComponent implements OnInit {
+export class ScanComponent {
 
   ticket: TicketScanTicketDto = new TicketScanTicketDto();
 
   constructor(private ticketService: TicketsService, private toastr: ToastrService) { }
-
-  ngOnInit(): void {
-  }
 
   Escanear() {
     if (this.ticket.ticketId.length == 0) {
