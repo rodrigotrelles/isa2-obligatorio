@@ -185,7 +185,7 @@ namespace ArenaGestor.DataAccessTest
         }
 
         [TestMethod]
-        public void GetDateRangeConcertsByMusicalProtagonist() 
+        public void GetDateRangeConcertsByMusicalProtagonist()
         {
             var result = management.GetDateRangeConcertsByMusicalProtagonist(dateRangeOK, 1).ToList();
             Assert.AreEqual(1, result.Count);

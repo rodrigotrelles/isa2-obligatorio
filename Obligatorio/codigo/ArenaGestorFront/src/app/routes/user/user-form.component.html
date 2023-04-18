@@ -13,11 +13,11 @@
                     <label class="form-label">Apellido</label>
                     <input type="text" class="form-control" name="surname" [(ngModel)]="model.surname">
                 </div>
-                <div class="mb-3" *ngIf="mode == 'Insertar'">
+                <div class="mb-3" *ngIf="mode === 'Insertar'">
                     <label class="form-label">Email</label>
                     <input type="email" class="form-control" name="email" [(ngModel)]="email">
                 </div>
-                <div class="mb-3" *ngIf="mode == 'Insertar'">
+                <div class="mb-3" *ngIf="mode === 'Insertar'">
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" name="password" [(ngModel)]="password">
                 </div>

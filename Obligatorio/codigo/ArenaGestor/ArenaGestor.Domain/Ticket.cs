@@ -23,5 +23,10 @@ namespace ArenaGestor.Domain
             return obj is Ticket ticket &&
                    TicketId.Equals(ticket.TicketId);
         }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(TicketId, TicketStatus, TicketStatusId, Email, Concert, ConcertId, Amount);
+        }
     }
 }

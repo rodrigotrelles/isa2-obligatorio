@@ -51,5 +51,9 @@ namespace ArenaGestor.Domain
             }
         }
 
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ArtistId, Name, User, UserId, Bands, Soloists);
+        }
     }
 }
