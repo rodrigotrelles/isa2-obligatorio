@@ -10,14 +10,12 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
 
   user: SecurityRegisterDto = new SecurityRegisterDto();
   error: String = "";
 
   constructor(private security: SecurityService, private events: Events, private router: Router, private toasts: ToastrService) { }
-
-  ngOnInit(): void {}
 
   Register() {
     this.security.Register(this.user).subscribe(
