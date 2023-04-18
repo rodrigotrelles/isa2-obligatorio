@@ -19,7 +19,6 @@ namespace ArenaGestor.APITest
         private Mock<IMapper> mockMapper;
         private User userOK;
         private SecurityRegisterUserDto insertUserDto;
-        private Mock<IUsersService> usersMock;
         private SecurityController api;
 
         private SecurityLoginDto loginDto;
