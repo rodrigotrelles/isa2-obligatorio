@@ -129,7 +129,7 @@ namespace ArenaGestor.BusinessTest
         {
             reflectionMock.Setup(x => x.GetMethod(It.IsAny<string>())).Returns(this.methodMock.Object);
             methodMock.Setup(x => x.Import(It.IsAny<string>())).Returns(concertsImportDtoOK);
-            mockMapper.Setup(x=>x.Map<Concert>(It.IsAny<ConcertDto>())).Returns(concertOK);
+            mockMapper.Setup(x => x.Map<Concert>(It.IsAny<ConcertDto>())).Returns(concertOK);
             ConcertsInsertResult testResult = new ConcertsInsertResult();
             concertsMock.Setup(x => x.InsertConcerts(It.IsAny<List<Concert>>())).Returns(testResult);
             ConcertsInsertResult result = service.ImportData("", "");

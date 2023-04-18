@@ -8,15 +8,12 @@ import { GenderService } from 'src/app/services/gender.service';
 @Component({
   templateUrl: './gender-form.component.html'
 })
-export class GenderInsertComponent implements OnInit {
+export class GenderInsertComponent {
 
   mode: String = "Insertar";
   model: GenderInsertGenderDto = new GenderInsertGenderDto();
 
   constructor(private toastr: ToastrService, private service: GenderService, private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
   Confirmar() {
     this.service.Insert(this.model).subscribe(res => {

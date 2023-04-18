@@ -1,4 +1,6 @@
-﻿namespace ArenaGestor.Domain
+﻿using System;
+
+namespace ArenaGestor.Domain
 {
     public class ConcertProtagonist
     {
@@ -12,6 +14,11 @@
             return obj is ConcertProtagonist other
                 && (ConcertId == other.ConcertId || (this.Concert != null && this.Concert.Equals(other.Concert)))
                 && (MusicalProtagonistId == other.MusicalProtagonistId || (this.Protagonist != null && this.Protagonist.Equals(other.Protagonist)));
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ConcertId, MusicalProtagonistId, Concert, Protagonist);
         }
     }
 }
