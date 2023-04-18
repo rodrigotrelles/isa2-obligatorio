@@ -6,15 +6,12 @@ import { UserService } from 'src/app/services/user.service';
 @Component({
   templateUrl: './change-password.component.html'
 })
-export class ChangePasswordComponent implements OnInit {
+export class ChangePasswordComponent {
 
   model: UserChangePasswordDto = new UserChangePasswordDto();
   newPasswordConfirm: String = "";
 
   constructor(private toastr: ToastrService, private userService: UserService) { }
-
-  ngOnInit(): void {
-  }
 
   Confirmar() {
     if (this.model.newPassword.length == 0 || this.newPasswordConfirm.length == 0 || this.model.oldPassword.length == 0) {

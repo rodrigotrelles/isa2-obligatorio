@@ -74,5 +74,9 @@ namespace ArenaGestor.Domain
             }
         }
 
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(MusicalProtagonistId, Name, StartDate, Gender, GenderId, Concerts);
+        }
     }
 }

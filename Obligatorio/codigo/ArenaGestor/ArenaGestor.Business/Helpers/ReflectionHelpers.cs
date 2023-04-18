@@ -69,10 +69,11 @@ namespace ArenaGestor.Business.Helpers
         private static List<Assembly> GetAssemblies()
         {
             string basePath = GetAssembliesFolder();
+            string exactPath = Path.GetFullPath(basePath);
 
             List<Assembly> assemblyList = new List<Assembly>();
 
-            foreach (string filePath in Directory.GetFiles(basePath))
+            foreach (string filePath in Directory.GetFiles(exactPath))
             {
                 if (filePath.EndsWith(".dll"))
                 {

@@ -29,11 +29,11 @@ namespace ArenaGestor.DataAccessTest
                 ArtistId = 1,
                 Name = "Kurt Cobain",
                 UserId = 1,
-                Bands = new List<ArtistBand>() 
+                Bands = new List<ArtistBand>()
                 {
                     new ArtistBand(){ }
                 },
-                Soloists = new List<Soloist>() 
+                Soloists = new List<Soloist>()
                 {
                     new Soloist(){ }
                 },
