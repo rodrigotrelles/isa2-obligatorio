@@ -88,7 +88,7 @@ namespace ArenaGestor.API
             CreateMap<List<UserRoleDto>, IEnumerable<UserRole>>();
             CreateMap<UserRole, UserRoleDto>().ForMember(x => x.Name, y => y.MapFrom(y => y.Role.Name));
             CreateMap<List<UserRole>, IEnumerable<UserRoleDto>>();
-          
+
 
             CreateMap<ConcertGetConcertsDto, ConcertFilter>();
             CreateMap<ConcertGetDateRangeConcertsDto, DateRange>();
