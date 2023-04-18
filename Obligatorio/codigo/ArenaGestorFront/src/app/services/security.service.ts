@@ -7,6 +7,7 @@ import { environment } from 'src/environments/environment';
 import { Events } from '../app.events';
 import { SecurityLoggedUser } from '../models/Security/SecurityLoggedUser';
 import { SecurityLoginDto } from '../models/Security/SecurityLoginDto';
+import { SecurityRegisterDto } from '../models/Security/SecurityRegisterDto';
 import { SecurityTokenResponseDto } from '../models/Security/SecurityTokenResponseDto';
 
 @Injectable({
@@ -97,6 +98,14 @@ export class SecurityService {
         observer.next(undefined)
       })
     }
+  }
+
+  Register(user: SecurityRegisterDto): Observable<SecurityRegisterDto> {
+    return this.http.post<SecurityRegisterDto>(this.apiUrl + "/register", user).pipe(
+      map(user => {
+        return user
+      })
+    )
   }
 
 }

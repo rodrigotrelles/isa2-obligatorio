@@ -1,6 +1,6 @@
 export class SecurityRegisterDto {
     email: String = "";
     name: String = "";
-    lastName: String = "";
+    surname: String = "";
     password: String = "";
 }
