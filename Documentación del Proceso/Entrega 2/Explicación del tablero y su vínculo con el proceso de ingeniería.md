@@ -38,3 +38,14 @@ En esta columna, los tickets pasan por una revisión del PO del proyecto. En cas
 En esta columna, los tickets fueron desarrollados y completaron todas las validaciones pertinentes para poder ser considerados una tarea finalizada.
 
 Se registra la fecha en la que se mueve el ticket a esta columna para posterior cálculo de métricas.
+
+## Documentación
+
+El tablero de documentación posee cuatro columnas:
+
+- To do
+- In progress
+- PR
+- Done
+
+Las cuatro columnas comparten su justificación con las columnas de igual nombre en el tablero de deuda técnica. No se utilizan columnas de Test ni Review porque en este caso, las tareas no corresponden a un desarrollo que requiera testing o aprobación del PO.
