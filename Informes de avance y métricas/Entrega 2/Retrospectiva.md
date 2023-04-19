@@ -21,7 +21,17 @@ La grabación de la retrospectiva la podemos ver dentro de esta misma carpeta
 https://metroretro.io/BO95873MRLNW
 
 ## Informe de avance
-**_Completar_**
+Durante esta etapa se creó un primer pipeline de Github Actions que nos permite mantener un nivel adecuado de la calidad del código, además de brindarnos un poco más de seguridad al correr automáticamente las pruebas unitarias antes de cada merge. 
+
+Además, se corrigen dos bugs seleccionados por nivel de prioridad y severidad, incluyendo un informe en la carpeta de documentación del proceso. Cabe aclarar que se detectaron algunos errores en los reportes de la etapa anterior, y por lo tanto, se descartaron algunos de los issues reportados. El pipeline cuenta con una documentación añadida en la carpeta de documentación del proceso.
+
+Como consecuencia de la introducción del pipeline además se corrigieron varios de los warnings para poder pasar la prueba de los linters y también se hicieron cambios en la lógica de carga de archivos .dll para la funcionalidad de importación y exportación. Dichos cambios se aplicaron para que las pruebas unitarias corran en el entorno del pipeline sin la necesidad de aplicar otros scripts.
+
+Se agrega documentación del proceso y su relación con el tablero en la carpeta de documentación del proceso, en conjunto con evidencia de la ejecución de los casos de prueba.
+
+Se hizo además la primera review con el PO (Franco) del desarrollo, y se completó satisfactoriamente con la misma.
+
+Se completó por último la segunda retrospectiva detallada anteriormente, y consideramos que hasta ahora las retrospectivas han aportado gran valor al crecimiento del equipo y su proceso.
 
 ## Informe de horas
 **_Actualizar_**
