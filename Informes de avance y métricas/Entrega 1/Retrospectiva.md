@@ -1,4 +1,4 @@
-# Retrospectiva 10/03/23
+# Retrospectiva 10/04/23
 
 En esta primera retrospectiva utilizamos el método DAKI (Drop, Add, Keep, Improve) para analizar cómo se trabajó hasta el momento. 
 Para ello, utilizamos un tablero de Metroretro donde los integrantes del equipo ingresaron cosas que consideraron que deberíamos dejar de hacer, comenzar a hacer, mejorar o mantener. Una vez finalizado el plazo para el ingreso de los items, se sostuvo una breve discusión sobre los items que se ingresaron y finalmente se inició una votación para convertir las ideas más votadas en puntos de acción.
