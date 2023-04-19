@@ -34,20 +34,25 @@ Se hizo además la primera review con el PO (Franco) del desarrollo, y se comple
 Se completó por último la segunda retrospectiva detallada anteriormente, y consideramos que hasta ahora las retrospectivas han aportado gran valor al crecimiento del equipo y su proceso.
 
 ## Informe de horas
-**_Actualizar_**
 
-- Guía de definición y uso de Kanban: 1h
-- Análisis de deuda técnica: 4h 30m
-- Documentación de issues: 2h 45m
-- Documentación del repositorio: 1h 15m
-- Documentación de registro de horas: 30m
+- Documentación de ejecución de pruebas: 20m
+- Desarrollo del pipeline: 3h 40m
+- Code reviews, merge y aplicación de cambios sugeridos: 2h 30m
+- Documentación de issues seleccionados: 20m
+- Solución de bug de registro: 4h 20m
+- Solución de bug de géneros: 30m
+- Documentación del pipeline: 40m
+- Documentación de tableros: 56m
+- Informe de avance: 20m
+- Informe de horas: 30m
 
-Total: 9h 30m
+Total: 14h 06m
 
 A todo lo anterior, sumamos 15h 20m bajo el concepto de gestión general del proyecto con el siguiente reparto:
-- Reuniones: 3h
-- Retrospectiva: 2h
-- Tareas de entendimiento y gestión: 5h 20m
-- Instalación del proyecto y solución de problemas bloqueantes: 5h
 
-Total incluyendo gestión: 24h 50m
+- Reuniones: 8h 30m
+- Retrospectiva: 1h 30m
+- Review (PO): 10m
+- Tareas de entendimiento y gestión: 3h 15m
+
+Total incluyendo gestión: 27h 31m
