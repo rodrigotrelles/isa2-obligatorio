@@ -29,12 +29,8 @@ export class SnackService {
     return this.http.get<SnackResultSnackDto>(this.apiUrl + "/" + id.toString())
   }
 
-  Insert(gender: SnackInsertSnackDto): Observable<SnackResultSnackDto> {
-    return this.http.post<SnackResultSnackDto>(this.apiUrl, gender)
-  }
-
-  Update(gender: SnackInsertSnackDto): Observable<SnackResultSnackDto> {
-    return this.http.put<SnackResultSnackDto>(this.apiUrl, gender)
+  Insert(snack: SnackInsertSnackDto): Observable<SnackResultSnackDto> {
+    return this.http.post<SnackResultSnackDto>(this.apiUrl, snack)
   }
 
   Delete(id: Number) {
