@@ -30,8 +30,6 @@ export class BuyComponent implements OnInit {
       });
     });
     this.GetSnacks();
-    console.log('hiii')
-
   }
   GetSnacks() {
     this.snackService.Get({ name: '' }).subscribe(res => {
@@ -46,7 +44,7 @@ export class BuyComponent implements OnInit {
     })
   }
 
-  Confirmar() {
+  Confirm() {
     let dto = new TicketBuyTicketDto();
     dto.Amount = this.amount;
     dto.concertId = this.selectedId;
@@ -58,7 +56,7 @@ export class BuyComponent implements OnInit {
       this.toastr.error(error.error);
     });
   }
-  RecalcularSubtotal() {
+  SubtotalCalculation() {
     this.snacksSubTotal = 0;
     this.snacksList.forEach((snack: SnackBuySnackDto) => {
       if (snack.amount < 0) {
