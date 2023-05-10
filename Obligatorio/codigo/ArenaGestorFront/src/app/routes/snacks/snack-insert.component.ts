@@ -15,7 +15,7 @@ export class SnackInsertComponent {
 
   constructor(private toastr: ToastrService, private service: SnackService, private router: Router) { }
 
-  Confirmar() {
+  Confirm() {
     this.service.Insert(this.model).subscribe(res => {
       this.toastr.success("Snack agregado correctamente", "Éxito")
       this.router.navigate(["/administracion/snacks"])
