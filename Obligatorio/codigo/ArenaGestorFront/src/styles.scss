@@ -1,4 +1,4 @@
-@import '~ngx-toastr/toastr';
+@import "~ngx-toastr/toastr";
 
 /* Importing Bootstrap SCSS file. */
 
@@ -10,34 +10,34 @@
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 .nav-link.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a.btn-sm {
-    max-height: 32px;
+  max-height: 32px;
 }
 
 .dropdown-list LI {
-    padding: 0px 10px !important;
+  padding: 0px 10px !important;
 }
 
 .selected-item {
-    display: inherit;
+  display: inherit;
 
-    span {
-        white-space: nowrap;
-    }
+  span {
+    white-space: nowrap;
+  }
 }
 
 .card-header {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .soldOut {
-    color: red;
-    font-size: 30px;
+  color: red;
+  font-size: 30px;
 }
