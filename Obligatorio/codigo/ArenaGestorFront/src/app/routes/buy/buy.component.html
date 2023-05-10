@@ -34,6 +34,9 @@
             <label for="description" class="snack-label-width fw-bold">Subtotal: ${{snacksSubTotal}}</label>
           </div>
         </div>
+        <div *ngIf="snacksList.length <= 0" class="mb-3">
+          Actualmente no hay Snacks disponibles.
+        </div>
 
         <button class="btn btn-primary btn-small" (click)="Confirm()" [disabled]="amount < 1">Confirmar</button>
       </div>
