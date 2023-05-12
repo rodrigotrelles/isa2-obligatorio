@@ -34,40 +34,40 @@ variaciones con respecto al estado anterior.
 ### Breve descripcion de cada paso
 
 **1. Backlog**
-_¿Cuándo se hace?_ Es el primer paso del proceso, cuando ingresa una nuevo requerimiento.
-_¿Quién lo hace?_ Cualquier miembro del equipo
-_¿Qué obtengo?_ Para el Frontend, un issue con los criterios de aceptacion definidos. Para el Backend, otro issue diferente, incluyendo los distintos escenarios de BDD. 
-_¿Cómo se hace?_ En las Standups diarias, se da la conversación y como resultado se obtienen los artefactos anteriormente.
+1. _¿Cuándo se hace?_ Es el primer paso del proceso, cuando ingresa una nuevo requerimiento.
+2. _¿Quién lo hace?_ Cualquier miembro del equipo
+3. _¿Qué obtengo?_ Para el Frontend, un issue con los criterios de aceptacion definidos. Para el Backend, otro issue diferente, incluyendo los distintos escenarios de BDD. 
+4. _¿Cómo se hace?_ En las Standups diarias, se da la conversación y como resultado se obtienen los artefactos anteriormente.
 
 **2. In Progress**
-_¿Cuándo se hace?_ Cuando un desarrollador toma una tarea del backlog.
-_¿Quién lo hace?_ Cualquier desarrollador del equipo
-_¿Qué obtengo?_ Un código implmentando el requerimiento para todos los issues y pruebas de BDD para los issues de backend.
-_¿Cómo se hace?_ Se programa en Angular los issues de Frontend con Visual Studio Code y C# los de Backend con Visual Studio Enterprise.
+1. _¿Cuándo se hace?_ Cuando un desarrollador toma una tarea del backlog.
+2. _¿Quién lo hace?_ Cualquier desarrollador del equipo
+3. _¿Qué obtengo?_ Un código implmentando el requerimiento para todos los issues y pruebas de BDD para los issues de backend.
+4. _¿Cómo se hace?_ Se programa en Angular los issues de Frontend con Visual Studio Code y C# los de Backend con Visual Studio Enterprise.
 
 **3. Code Review**
-_¿Cuándo se hace?_ Cuando se termina de implementar todos los requerimientos de un Issue.
-_¿Quién lo hace?_ Cualquier desarrollador del equipo.
-_¿Qué obtengo?_ Un merge del código del issue en la rama de develop.
-_¿Cómo se hace?_ Se crea un Pull Request, que se revisa por otra persona y que también debe pasar los checks de Github Actions. 
+1. _¿Cuándo se hace?_ Cuando se termina de implementar todos los requerimientos de un Issue.
+2. _¿Quién lo hace?_ Cualquier desarrollador del equipo.
+3. _¿Qué obtengo?_ Un merge del código del issue en la rama de develop.
+4. _¿Cómo se hace?_ Se crea un Pull Request, que se revisa por otra persona y que también debe pasar los checks de Github Actions. 
 
 **4. Testing**
-_¿Cuándo se hace?_ Cuando un PR es aprobado y mergeado a la rama de develop.
-_¿Quién lo hace?_ Cualquier Tester del equipo.
-_¿Qué obtengo?_ Una aprobación de que los criterios de aceptacion se cumplen desde el punto de vista de los Tester o un rechazo por incumplimiento de los mismos. Si existe un rechazo, se mueve nuevamente a la columna de In Progress.
-_¿Cómo se hace?_ Se realiza un test manual exploratorio por parte del Tester.
+1. _¿Cuándo se hace?_ Cuando un PR es aprobado y mergeado a la rama de develop.
+2. _¿Quién lo hace?_ Cualquier Tester del equipo.
+3. _¿Qué obtengo?_ Una aprobación de que los criterios de aceptacion se cumplen desde el punto de vista de los Tester o un rechazo por incumplimiento de los mismos. Si existe un rechazo, se mueve nuevamente a la columna de In Progress.
+4. _¿Cómo se hace?_ Se realiza un test manual exploratorio por parte del Tester.
 
 **5. Review**
-_¿Cuándo se hace?_ Cuando el issue es aprobado por el Tester.
-_¿Quién lo hace?_ El Product Owner
-_¿Qué obtengo?_ Una aprobación desde el punto de vista del producto de que este issue cumple con todos los requerimientos del cliente. El PO puede rechazar también aprobación. En este caso, se actualizan los requerimientos y se mueven nuevamente a la columna de In Progress.
-_¿Cómo se hace?_ Se realiza una reunión entre el Producto Owner y los miembros del equipo.
+1. _¿Cuándo se hace?_ Cuando el issue es aprobado por el Tester.
+2. _¿Quién lo hace?_ El Product Owner
+3. _¿Qué obtengo?_ Una aprobación desde el punto de vista del producto de que este issue cumple con todos los requerimientos del cliente. El PO puede rechazar también aprobación. En este caso, se actualizan los requerimientos y se mueven nuevamente a la columna de In Progress.
+4. _¿Cómo se hace?_ Se realiza una reunión entre el Producto Owner y los miembros del equipo.
 
 **6. Done**
-_¿Cuándo se hace?_ Cuando una issue es aprobado por el Product Owner
-_¿Quién lo hace?_ El Product Owner
-_¿Qué obtengo?_ Valor para el cliente
-_¿Cómo se hace?_ Finalizando el proceso de ingeniería y cerrando este issue.
+1. _¿Cuándo se hace?_ Cuando una issue es aprobado por el Product Owner
+2. _¿Quién lo hace?_ El Product Owner
+3. _¿Qué obtengo?_ Valor para el cliente
+4. _¿Cómo se hace?_ Finalizando el proceso de ingeniería y cerrando este issue.
 
 
 ## Registro de horas
