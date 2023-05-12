@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { SnackGetSnacksDto } from 'src/app/models/Snacks/SnackGetSnacksDto';
 import { SnackResultSnackDto } from 'src/app/models/Snacks/SnackResultSnackDto';
 import { SnackService } from 'src/app/services/snack.service';
 
@@ -11,7 +10,6 @@ import { SnackService } from 'src/app/services/snack.service';
 export class SnacksComponent implements OnInit {
 
   snacksList: Array<SnackResultSnackDto> = new Array<SnackResultSnackDto>()
-  filter: String = "";
   snackToDelete: Number = 0;
 
   constructor(private toasts: ToastrService, private service: SnackService, private router: Router) { }
@@ -21,8 +19,7 @@ export class SnacksComponent implements OnInit {
   }
 
   GetData() {
-    let filterDto: SnackGetSnacksDto = { name: this.filter };
-    this.service.Get(filterDto).subscribe(res => {
+    this.service.Get().subscribe(res => {
       this.snacksList = res
     })
   }
