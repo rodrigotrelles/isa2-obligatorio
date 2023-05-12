@@ -4,14 +4,16 @@ using ArenaGestor.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ArenaGestor.DataAccess.Migrations
 {
     [DbContext(typeof(ArenaGestorContext))]
-    partial class ArenaGestorContextModelSnapshot : ModelSnapshot
+    [Migration("20230506200218_migration01")]
+    partial class migration01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -340,12 +342,15 @@ namespace ArenaGestor.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.HasKey("SnackId");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Snack");
                 });
