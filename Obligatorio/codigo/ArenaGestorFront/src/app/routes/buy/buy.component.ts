@@ -32,11 +32,12 @@ export class BuyComponent implements OnInit {
     this.GetSnacks();
   }
   GetSnacks() {
-    this.snackService.Get({ name: '' }).subscribe(res => {
+    this.snackService.Get().subscribe(res => {
       this.snacksList = res.map((snack: SnackResultSnackDto) => {
         return {
           snackId: snack.snackId,
           name: snack.name,
+          description: snack.description,
           price: Number(snack.price),
           amount: 0
         }

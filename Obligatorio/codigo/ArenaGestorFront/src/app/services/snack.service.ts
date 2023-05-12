@@ -4,7 +4,6 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { SnackResultSnackDto } from '../models/Snacks/SnackResultSnackDto';
 import { SnackInsertSnackDto } from '../models/Snacks/SnackInsertSnackDto';
-import { SnackGetSnacksDto } from '../models/Snacks/SnackGetSnacksDto';
 
 @Injectable({
   providedIn: 'root'
@@ -17,12 +16,8 @@ export class SnackService {
     this.apiUrl = environment.apiURL + "snacks"
   }
 
-  Get(filter?: SnackGetSnacksDto): Observable<Array<SnackResultSnackDto>> {
-    let url = this.apiUrl
-    if (filter && filter.name.length > 0) {
-      url = url + "?name=" + filter.name
-    }
-    return this.http.get<Array<SnackResultSnackDto>>(url)
+  Get(): Observable<Array<SnackResultSnackDto>> {
+    return this.http.get<Array<SnackResultSnackDto>>(this.apiUrl)
   }
 
   GetById(id: Number): Observable<SnackResultSnackDto> {

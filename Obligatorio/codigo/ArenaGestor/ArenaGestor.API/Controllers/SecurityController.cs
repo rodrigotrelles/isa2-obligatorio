@@ -4,6 +4,7 @@ using ArenaGestor.APIContracts.Security;
 using ArenaGestor.BusinessInterface;
 using ArenaGestor.Domain;
 using AutoMapper;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 

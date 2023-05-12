@@ -20,6 +20,8 @@ namespace ArenaGestor.DataAccess
         public DbSet<ArtistBand> ArtistBands { get; set; }
         public DbSet<ConcertProtagonist> ConcertProtagonists { get; set; }
         public DbSet<Country> Countrys { get; set; }
+        public DbSet<Snack> Snacks { get; set; }
+
 
         public ArenaGestorContext(DbContextOptions options) : base(options)
         {
@@ -45,6 +47,7 @@ namespace ArenaGestor.DataAccess
             modelBuilder.Entity<UserRole>().ToTable("RoleUser");
             modelBuilder.Entity<ArtistBand>().ToTable("ArtistBand");
             modelBuilder.Entity<ConcertProtagonist>().ToTable("ConcertProtagonist");
+            modelBuilder.Entity<Snack>().ToTable("Snack");
 
             modelBuilder.Entity<Gender>(entity =>
             {
