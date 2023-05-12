@@ -2,18 +2,18 @@
 
 Para esta tercera entrega, decidimos eliminar uno de los tableros (Documentación) ya que nos pareció que uno solo tablero era suficiente. 
 La diferenciación de las tareas decidimos hacerla en base a _issues_ diferentes. 
-De ahora en más los issues para documentación cuentan con el label _documentation_ y utilizan el mismo tablero que los demas. 
+De ahora en más los issues para documentación cuentan con el label _documentation_ y utilizan el mismo tablero que los demas. Además los issues de Frontend
+y Backend también tienen Labels para cada caso.
 
-## Tablero Deuda técnica
+## Tablero ISA 2
 
-Este tablero pasa a tener X columnas, que nos permiten incluir el proceso de BDD en el tablero utilizado:
+El proceso de ingeniería definido cobra vida propia en este tablero KANBAN.
 
-### To do
+### Backlog
 La columna que contiene las tareas ingresadas para comenzar a trabajar. Los tickets en esta columna tienen una descripción y fecha de creación para que una vez que pasen a Done se puedan calcular las métricas correspondientes.
 
 ### In progress
-En esta columna se encuentran todos los tickets que están siendo desarrollados. El desarrollo implica la codificación de la funcionalidad en todas las puntas del sistema. 
-
+En esta columna se encuentran todos los tickets que están siendo desarrollados. El desarrollo implica la codificación de la funcionalidad en todas las puntas del sistema. Para los tickets de Backend, la creacion de los test se realiza en este paso (Pasar los escenarios predefinidos a Specflow). En esta columna también se corren las pruebas de BDD.
 Los tickets de esta columna tienen registrada la fecha en la que se pasó a esta columna, para posterior calculo de métricas.
 
 ### Code Review
@@ -22,14 +22,9 @@ En esta columna se encuentran los tickets que completaron su desarrollo desde el
 - Code review por un desarrollador distinto al que realizó la tarea. Se requiere una aprobación para poder mergear el ticket.
 - Ejecución de pruebas unitarias de .NET por parte del pipeline de Github Actions.
 - Ejecución de linters tanto para el código .NET como el código Angular.
+- Parte del proceso de Code Review es también correr todos los tests de BDD.
 
 En caso de que cualquiera de las validaciones falle, es obligatorio corregir antes de hacer merge.
-
-
-(Agregar columnas de BDD con la explicación de cada una de ellas)
-
-
-
 
 ### Testing
 En esta columna, un tester debe ejecutar las pruebas manuales pertinentes para asegurar la calidad de la funcionalidad desarrollada. En caso de no ser aprobado, el ticket vuelve a la columna de In progress con un comentario para resolver la incidencia detectada.
@@ -39,5 +34,4 @@ En esta columna, los tickets pasan por una revisión del PO del proyecto. En cas
 
 ### Done
 En esta columna, los tickets fueron desarrollados y completaron todas las validaciones pertinentes para poder ser considerados una tarea finalizada.
-
 Se registra la fecha en la que se mueve el ticket a esta columna para posterior cálculo de métricas.
