@@ -35,6 +35,9 @@ El workflow de Angular es ejecutado bajo las mismas condiciones que el de .NET p
 
 En el caso de Angular, utilizamos angular-eslint como linter, con su configuración estándar dado que es sugerido por Angular mismo.
 
+### Pruebas de BDD
+Debimos modificar el pipeline para excluir las nuevas clases agregadas por BDD, ya que era necesario tener el Backend levantado, sino los test fallaban y las modificaciones estaban fuera del scope del trabajo. 
+
 ## Vínculo con el tablero
 
 El pipeline de github se vincula principalmente con la columna PR del tablero. La columna de PR consiste en que al terminar un desarrollo, un desarrollador pasa su ticket de In Progress a PR y abre dicho PR. Una vez abierto, el PR iniciará los workflows correspondientes y validará que el código se encuentre en un estado correcto para mergear. Otro miembro del equipo deberá hacer un code review, y al aprobar dicho code review, se procede a mergear el código, moviendo el ticket a la columna de Test.
