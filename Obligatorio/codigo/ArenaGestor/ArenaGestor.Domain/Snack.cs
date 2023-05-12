@@ -15,7 +15,7 @@ namespace ArenaGestor.Domain
         [Range(1, int.MaxValue)]
         public float Price { get; set; }
 
-        public void ValidSnack() 
+        public void ValidSnack()
         {
             if (!CommonValidations.ValidRequiredString(this.Name))
             {
@@ -25,7 +25,7 @@ namespace ArenaGestor.Domain
             {
                 throw new ArgumentException("The snack Description is required");
             }
-            if (this.Price < 1) 
+            if (this.Price < 1)
             {
                 throw new ArgumentException("The snack price must be greater than 1");
             }

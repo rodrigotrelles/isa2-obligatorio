@@ -28,20 +28,20 @@ namespace ArenaGestor.API.Controllers
 
         [AuthorizationFilter(RoleCode.Administrador)]
         [HttpPost]
-        public IActionResult AddSnack([FromBody]SnackInsertDto insertSnack)
+        public IActionResult AddSnack([FromBody] SnackInsertDto insertSnack)
         {
-            try 
+            try
             {
                 var snack = mapper.Map<Snack>(insertSnack);
                 var result = snacksService.AddSnack(snack);
                 var resultDto = mapper.Map<SnackResultDto>(result);
                 return Ok(resultDto);
             }
-            catch (Exception e) 
+            catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
-         
+
         }
 
         [AuthorizationFilter(RoleCode.Administrador)]
@@ -59,14 +59,14 @@ namespace ArenaGestor.API.Controllers
             }
             catch (NullReferenceException ex)
             {
-                 return NotFound(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
-        
+
         [HttpGet]
         public IActionResult Snacks()
         {
@@ -77,7 +77,7 @@ namespace ArenaGestor.API.Controllers
         [HttpGet("{snackId}")]
         public IActionResult SnacksById(int snackId)
         {
-            try 
+            try
             {
                 var result = snacksService.SnackById(snackId);
                 var resultDto = mapper.Map<SnackResultDto>(result);

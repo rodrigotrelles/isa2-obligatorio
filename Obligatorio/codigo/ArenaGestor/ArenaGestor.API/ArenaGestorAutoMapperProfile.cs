@@ -146,7 +146,7 @@ namespace ArenaGestor.API
             CreateMap<Country, CountryResultDto>();
             CreateMap<ConcertUpdateCountryDto, Country>();
             CreateMap<ConcertUpdateLocationDto, Location>();
-            
+
             CreateMap<SnackInsertDto, Snack>();
             CreateMap<Snack, SnackResultDto>();
 

@@ -15,7 +15,7 @@ using Xunit;
 
 namespace SFArenaGestor.Steps
 {
-    [Scope(Feature ="DeleteSnack")]
+    [Scope(Feature = "DeleteSnack")]
     [Binding]
     class DeleteSnackStepDefinitions
     {

@@ -56,7 +56,7 @@ namespace SFArenaGestor.Steps
             var result = await response.Content.ReadAsStringAsync();
             var resultParse = JsonConvert.DeserializeObject<SecurityTokenResponseDto>(result);
             _token = resultParse.Token;
-            
+
         }
 
         [Given("a signed in non admin user")]
@@ -110,18 +110,20 @@ namespace SFArenaGestor.Steps
                     Headers =
                         {
                           ContentType = new MediaTypeHeaderValue("application/json"),
-                           
+
                         }
                 }
             };
             request.Headers.Add("token", _token);
             var client = new HttpClient();
             var response = await client.SendAsync(request).ConfigureAwait(false);
-            try {
+            try
+            {
                 var result = await response.Content.ReadAsStringAsync();
                 var resultParse = JsonConvert.DeserializeObject<SnackResultDto>(result);
                 _deleteAfterAddStep = resultParse.SnackId;
-            } catch (Exception) { }
+            }
+            catch (Exception) { }
             _scenarioContext.Set(response.StatusCode, "ResponseStatusCode");
         }
 
@@ -136,7 +138,7 @@ namespace SFArenaGestor.Steps
         {
             var request = new HttpRequestMessage(HttpMethod.Delete, $"https://localhost:44372/Snacks/{_deleteAfterAddStep}");
             request.Headers.Add("token", _token);
-           
+
             var client = new HttpClient();
             var response = await client.SendAsync(request).ConfigureAwait(false);
         }

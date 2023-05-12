@@ -48,7 +48,7 @@ namespace ArenaGestor.DataAccess
             modelBuilder.Entity<ArtistBand>().ToTable("ArtistBand");
             modelBuilder.Entity<ConcertProtagonist>().ToTable("ConcertProtagonist");
             modelBuilder.Entity<Snack>().ToTable("Snack");
-            
+
             modelBuilder.Entity<Gender>(entity =>
             {
                 entity.HasIndex(e => e.Name).IsUnique();

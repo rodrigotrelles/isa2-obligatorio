@@ -18,12 +18,12 @@ namespace ArenaGestor.Business
         }
         public Snack AddSnack(Snack snack)
         {
-          
-          ValidSnack(snack);
-          SnacksManagement.AddSnack(snack);
-          SnacksManagement.Save();
-    
-           
+
+            ValidSnack(snack);
+            SnacksManagement.AddSnack(snack);
+            SnacksManagement.Save();
+
+
             return snack;
         }
 
@@ -52,10 +52,10 @@ namespace ArenaGestor.Business
 
         public IEnumerable<Snack> Snacks()
         {
-            return SnacksManagement.Snacks().ToList();   
+            return SnacksManagement.Snacks().ToList();
         }
 
-        private static void ValidSnack(Snack snack) 
+        private static void ValidSnack(Snack snack)
         {
             if (snack == null)
             {
@@ -63,6 +63,6 @@ namespace ArenaGestor.Business
             }
 
             snack.ValidSnack();
-        } 
+        }
     }
 }
