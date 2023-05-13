@@ -39,6 +39,11 @@ Se hizo además la segunda review con el PO (Franco) del desarrollo de las nueva
 
 Se completó por último la tercera retrospectiva detallada anteriormente.
 
+Se trabajó también en saltear las pruebas de SpecFlow en Github Actions para evitar que fallen al no tener el proyecto corriendo.
+
+Se notifica de un bug conocido: Al agregar un concierto nuevo para las pruebas de BDD de compra de snacks, no existe un método para eliminar tickets y la lógica de negocio
+prohíbe la eliminación de conciertos con tickets vendidos, por lo tanto, es imposible limpiar correctamente la base de datos tras ejecutar las pruebas sin tener que desarrollar la feature de eliminación de tickets.
+
 Informe de horas
 
-(a completar)
+Se incluye un documento pdf en la carpeta Entrega 3
