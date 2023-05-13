@@ -116,7 +116,8 @@ namespace ArenaGestor.Business
                 ConcertId = ticketBuy.ConcertId,
                 Email = user.Email,
                 TicketStatusId = ticketStatusManagement.GetStatus(TicketCode.Comprado).TicketStatusId,
-                Amount = ticketBuy.Amount
+                Amount = ticketBuy.Amount,
+                Snacks = ticketBuy.Snacks
             };
 
             ticketManagement.InsertTicket(ticket);

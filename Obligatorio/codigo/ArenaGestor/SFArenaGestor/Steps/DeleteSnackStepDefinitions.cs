@@ -17,7 +17,7 @@ namespace SFArenaGestor.Steps
 {
     [Scope(Feature = "DeleteSnack")]
     [Binding]
-    class DeleteSnackStepDefinitions
+    public class DeleteSnackStepDefinitions
     {
         private readonly ScenarioContext _scenarioContext;
         private readonly Snack _snack = new Snack();
