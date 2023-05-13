@@ -136,7 +136,7 @@ namespace SFArenaGestor.Steps
                 var resultParse2 = JsonConvert.DeserializeObject<ConcertResultConcertDto>(result2);
                 _concertId = resultParse2.ConcertId;
             }
-            catch (Exception) {}
+            catch (Exception) { }
         }
 
         [Given(@"a signed in non spectator user")]
@@ -176,7 +176,7 @@ namespace SFArenaGestor.Steps
         public async Task WhenTheUserConfirmsThePurchase()
         {
             List<TicketBuySnackDto> list = new List<TicketBuySnackDto>();
-            if(!_snack.Name.Equals("Null Snack"))
+            if (!_snack.Name.Equals("Null Snack"))
             {
                 list.Add(_snack);
             }
