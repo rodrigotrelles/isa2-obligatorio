@@ -4,14 +4,16 @@ using ArenaGestor.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ArenaGestor.DataAccess.Migrations
 {
     [DbContext(typeof(ArenaGestorContext))]
-    partial class ArenaGestorContextModelSnapshot : ModelSnapshot
+    [Migration("20230512200435_newSnackFeature3")]
+    partial class newSnackFeature3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -371,12 +373,16 @@ namespace ArenaGestor.DataAccess.Migrations
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
-                    b.Property<Guid?>("TicketId")
+                    b.Property<string>("TicketId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("TicketId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TicketId");
+                    b.HasIndex("TicketId1");
 
                     b.ToTable("SnackBuy");
                 });
@@ -616,7 +622,7 @@ namespace ArenaGestor.DataAccess.Migrations
                 {
                     b.HasOne("ArenaGestor.Domain.Ticket", null)
                         .WithMany("Snacks")
-                        .HasForeignKey("TicketId");
+                        .HasForeignKey("TicketId1");
                 });
 
             modelBuilder.Entity("ArenaGestor.Domain.Ticket", b =>
