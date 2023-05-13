@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ArenaGestor.Domain
@@ -17,6 +18,8 @@ namespace ArenaGestor.Domain
         public int ConcertId { get; set; }
         [Required]
         public int Amount { get; set; }
+        [Required]
+        public virtual ICollection<SnackBuy> Snacks { get; set; }
 
         public override bool Equals(object obj)
         {

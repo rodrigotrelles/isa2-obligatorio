@@ -4,14 +4,16 @@ using ArenaGestor.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ArenaGestor.DataAccess.Migrations
 {
     [DbContext(typeof(ArenaGestorContext))]
-    partial class ArenaGestorContextModelSnapshot : ModelSnapshot
+    [Migration("20230506200218_migration01")]
+    partial class migration01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -340,45 +342,17 @@ namespace ArenaGestor.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.HasKey("SnackId");
 
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("Snack");
-                });
-
-            modelBuilder.Entity("ArenaGestor.Domain.SnackBuy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
-
-                    b.Property<Guid?>("TicketId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TicketId");
-
-                    b.ToTable("SnackBuy");
                 });
 
             modelBuilder.Entity("ArenaGestor.Domain.Ticket", b =>
@@ -612,13 +586,6 @@ namespace ArenaGestor.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ArenaGestor.Domain.SnackBuy", b =>
-                {
-                    b.HasOne("ArenaGestor.Domain.Ticket", null)
-                        .WithMany("Snacks")
-                        .HasForeignKey("TicketId");
-                });
-
             modelBuilder.Entity("ArenaGestor.Domain.Ticket", b =>
                 {
                     b.HasOne("ArenaGestor.Domain.Concert", "Concert")
@@ -718,11 +685,6 @@ namespace ArenaGestor.DataAccess.Migrations
             modelBuilder.Entity("ArenaGestor.Domain.Role", b =>
                 {
                     b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("ArenaGestor.Domain.Ticket", b =>
-                {
-                    b.Navigation("Snacks");
                 });
 
             modelBuilder.Entity("ArenaGestor.Domain.User", b =>
