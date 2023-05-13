@@ -103,7 +103,6 @@ namespace SFArenaGestor.Steps
             };
 
             List<ConcertInsertProtagonistDto> protagonistList = new List<ConcertInsertProtagonistDto>() { protagonist };
-            
             Random random = new Random();
             int randomNumber = random.Next(1, 99999);
 
@@ -137,10 +136,7 @@ namespace SFArenaGestor.Steps
                 var resultParse2 = JsonConvert.DeserializeObject<ConcertResultConcertDto>(result2);
                 _concertId = resultParse2.ConcertId;
             }
-            catch (Exception e
-            ) {
-                Console.WriteLine(e.ToString());
-            }
+            catch (Exception) {}
         }
 
         [Given(@"a signed in non spectator user")]
@@ -190,7 +186,6 @@ namespace SFArenaGestor.Steps
                 Snacks = list,
                 Amount = 1
             };
-
             string requestBody = JsonConvert.SerializeObject(ticket);
             var request = new HttpRequestMessage(HttpMethod.Post, $"https://localhost:44372/Tickets/Shopping")
             {
