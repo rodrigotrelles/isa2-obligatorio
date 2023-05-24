@@ -25,9 +25,11 @@ Durante esta etapa se trabajó principalmente en dos tareas
 2. Informe de métricas 
 
 1. Automatización de testing exploratorio con Selenium 
+
 (a completar)
 
 2. Informe de métricas 
+
 Se realizó el cálculo del Lead Time, el Cycle Time y el Touch Time de cada bug corregido y user story realizado en las entregas 2 y 3. Además, sacamos promedios
 de cada una de esas métricas por hora y por día. Luego, realizamos el cálculo de las mismas métricas pero agrupadas por entrega y cálculamos la eficiencia del flujo 
 y el throughput de cada ciclo. Consideramos que fue una gran experiencia el registro de estás métricas. Varios de nosotros nunca habiamos hecho algo así y nos pareció
