@@ -26,7 +26,9 @@ Durante esta etapa se trabajó principalmente en dos tareas
 
 1. Automatización de testing exploratorio con Selenium 
 
-(a completar)
+Se completó exitosamente la creación de los primeros test de Selenium, los mismos pueden ser ejecutados en conjunto y solamente es necesario eliminar el usuario registrado por la prueba de Sign up. Este proceso se encuentra documentado en la carpeta Selenium dentro de esta misma carpeta (Entrega 4). 
+
+Consideramos que Selenium agrega un valor enorme a la calidad del proyecto y la seguridad para futuros desarrollos. También creemos que aporta un gran valor en cuanto a horas de trabajo, dado que estas pruebas ahorran una gran cantidad de trabajo de parte de los testers al ejecutar una prueba de regresión.
 
 2. Informe de métricas 
 
@@ -35,8 +37,6 @@ de cada una de esas métricas por hora y por día. Luego, realizamos el cálculo
 y el throughput de cada ciclo. Consideramos que fue una gran experiencia el registro de estás métricas. Varios de nosotros nunca habiamos hecho algo así y nos pareció
 muy útil para identificar ciertos aspectos del proceso y el equipo.
 
-
 Informe de horas
 
 Se incluye un documento pdf en la carpeta Entrega 4
-
