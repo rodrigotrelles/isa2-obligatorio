@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
 using System.Text.Json.Serialization;
 
 namespace ArenaGestor
@@ -59,6 +60,7 @@ namespace ArenaGestor
 
             services.AddCors(options =>
             {
+                options.AddPolicy(name: "CORSSSS", builder => builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost").AllowAnyHeader().AllowAnyMethod());
                 options.AddDefaultPolicy(builder =>
                 {
                     builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
